@@ -7,8 +7,10 @@
 /* title color #212121 */
 /* footer address #FFFFFF99 */
 /* background color #E5E5E5 */
+/* hover btn color #188CE8 */
 
 :root {
+  --hover-button-color: #188ce8;
   --hero-footer-color: #2f303a;
   --team-background-color: #f5f4fa;
   --main-text-color: #757575;
@@ -17,6 +19,17 @@
   --wite-color: #fff;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --background-color: #e5e5e5;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: solid 1px tomato;
+}
+.img {
+  display: block;
 }
 body {
   background-color: var(--background-color);
@@ -30,16 +43,22 @@ body {
 .list {
   list-style-type: none;
 }
+.container .list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header-contacts {
+  margin-bottom: 0;
+}
 .link {
   text-decoration: none;
+  display: inline-block;
 }
 /* Хедер */
 .header {
   background-color: var(--wite-color);
 }
-.logo-link :focus {
-  color: var(--accent-color);
-}
+
 .logo-web,
 .logo-studio {
   color: var(--accent-color);
@@ -54,20 +73,26 @@ body {
 .logo-studio {
   color: black;
 }
-
-.contacts-link {
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+.header-contacts {
+  margin-top: 0;
 }
+
 .header-link {
   color: var(--title-color);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header .list {
+  padding-left: 0;
+}
+.contacts-link {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 .header-link:hover,
@@ -88,6 +113,9 @@ body {
 .footer {
   background-color: var(--hero-footer-color);
 }
+.hero {
+  margin-bottom: 94px;
+}
 
 .hero-title {
   color: var(--wite-color);
@@ -98,6 +126,13 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 200px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Кнопки */
 .hero-button {
@@ -110,11 +145,17 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
 
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  width: 200px;
+  border-radius: 4px;
+  margin-bottom: 200px;
+}
+
+.hero-button:hover {
+  background-color: var(--hover-button-color);
 }
 
 /* Особенности */
@@ -129,8 +170,24 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
+.features p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.features {
+  margin-bottom: 94px;
+}
+
 /* Чем мы занимаемся */
+.projects {
+  margin-bottom: 94px;
+}
+.team {
+  background-color: var(--team-background-color);
+}
 .projects-title,
 .team-title {
   color: var(--title-color);
@@ -140,6 +197,15 @@ body {
   line-height: 0.8;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.projects-title {
+  margin-bottom: 50px;
 }
 /* Наша команда */
 .employee-title {
@@ -150,16 +216,31 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.team-photo {
+  margin-bottom: 30px;
 }
 .employee-position {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* Футер */
 .footer {
   background-color: var(--hero-footer-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.logo-link {
+  margin-bottom: 20px;
+}
+.address .list {
+  padding-left: 0;
 }
 .logo-studio-footer {
   color: var(--wite-color);
@@ -171,6 +252,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
+
 .footer-address {
   color: var(--wite-color);
 
@@ -180,6 +262,7 @@ body {
   line-height: 1.7;
 
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
 }
 .footer-contacts {
   color: var(--footer-contacts-color);
@@ -189,6 +272,8 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  margin-bottom: 9px;
 }
 .footer-contacts:hover {
   color: var(--wite-color);
