@@ -23,57 +23,64 @@
   <body>
     <!-- Хедер -->
     <header class="header">
-      <nav class="container">
-        <a class="link" href="./index.html">
-          <span class="logo-web">Web</span><span class="logo-studio">Studio</span>
-        </a>
-        <ul class="list">
-          <li>
-            <a class="link header-link" href="./index.html">Студия</a>
-          </li>
-          <li>
-            <a class="link header-link" href=""><span class="nav-color">Портфолио</span></a>
-          </li>
-          <li><a class="link header-link" href="">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="container header-container">
+        <nav class="navigation">
+          <a class="link logo-link" href="./index.html">
+            <span class="logo-web">Web</span><span class="logo-studio">Studio</span>
+          </a>
+          <ul class="list">
+            <li class="nav">
+              <a class="link header-link" href="./index.html"
+                ><span  >Студия</span></a
+              >
+            </li>
+            <li class="nav">
+              <a class="link header-link" href=""><span class="nav-color">Портфолио</span></a
+              ></a>
+            </li>
+            <li class="nav">
+              <a class="link header-link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
-      <ul class="container header-contacts">
-        <li class="list">
-          <a class="link contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="list">
-          <a class="link contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+        <ul class="header-contacts">
+          <li class="list">
+            <a class="link contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="list">
+            <a class="link contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
-      <section>
+      <section class="container">
         <!-- Кнопки -->
+
         <h1 class="hidden-title">Проекты</h1>
-        <ul class="list">
-          <li>
+        <ul class="list list-buttons">
+          <li class="buttons">
             <button class="portfolio-button" type="button">Все</button>
           </li>
-          <li>
+          <li class="buttons">
             <button class="portfolio-button" type="button">Веб-сайты</button>
           </li>
 
-          <li>
+          <li class="buttons">
             <button class="portfolio-button" type="button">Приложения</button>
           </li>
           <li>
             <button class="portfolio-button" type="button">Дизайн</button>
           </li>
-          <li>
+          <li class="buttons">
             <button class="portfolio-button" type="button">Маркетинг</button>
           </li>
         </ul>
 
         <!-- Проекты -->
-
-        <ul class="list">
-          <li>
+        <ul class="list projects-list">
+          <li class="project-items">
             <a class="link" href="">
               <img
                 src="./img/portfolio-images/technokriak.jpg"
@@ -84,7 +91,7 @@
               <p class="portfolio-description">Веб-сайт</p></a
             >
           </li>
-          <li>
+          <li class="project-items">
             <a class="link" href="">
               <img
                 src="./img/portfolio-images/new-orlean-poster.jpg"
@@ -95,7 +102,7 @@
               <p class="portfolio-description">Дизайн</p></a
             >
           </li>
-          <li>
+          <li class="project-items">
             <a class="link" href=""
               ><img
                 src="./img/portfolio-images/seafood-restourant.jpg"
@@ -106,21 +113,21 @@
               <p class="portfolio-description">Приложение</p></a
             >
           </li>
-          <li>
+          <li class="project-items">
             <a class="link" href=""
               ><img src="./img/portfolio-images/prime-poject.jpg" alt="Наушники" width="370" />
               <h2 class="portfolio-projects-title">Проект Prime</h2>
               <p class="portfolio-description">Маркетинг</p></a
             >
           </li>
-          <li>
+          <li class="project-items">
             <a class="link" href="">
               <img src="./img/portfolio-images/boxes-project.jpg" alt="Две коробки" width="370" />
               <h2 class="portfolio-projects-title">Проект Boxes</h2>
               <p class="portfolio-description">Приложение</p></a
             >
           </li>
-          <li>
+          <li class="project-items">
             <a class="link" href="">
               <img
                 src="./img/portfolio-images/inspiration-has-no-borders.jpg"
@@ -131,14 +138,14 @@
               <p class="portfolio-description">Веб-сайт</p></a
             >
           </li>
-          <li>
+          <li class="project-items">
             <a class="link" href="">
               <img src="./img/portfolio-images/limited-edition.jpg" alt="Книга" width="370" />
               <h2 class="portfolio-projects-title">Издание Limited Edition</h2>
               <p class="portfolio-description">Дизайн</p></a
             >
           </li>
-          <li>
+          <li class="project-items">
             <a class="link" href="">
               <img
                 src="./img/portfolio-images/lab-project.jpg"
@@ -149,7 +156,7 @@
               <p class="portfolio-description">Маркетинг</p></a
             >
           </li>
-          <li>
+          <li class="project-items">
             <a class="link" href=""
               ><img src="./img/portfolio-images/growing-business.jpg" alt="Ноутбук" width="370" />
               <h2 class="portfolio-projects-title">Growing Business</h2>
@@ -161,32 +168,30 @@
     </main>
     <!--Футер  -->
     <footer class="footer">
-      <div class="container container-footer">
+      <div class="container">
         <div class="logo-container">
           <a class="link logo-link" href="./index.html"
             ><span class="logo-web">Web</span><span class="logo-studio-footer">Studio</span>
           </a>
         </div>
         <address class="address">
-          <div class="container-address">
-            <ul class="list">
-              <li>
-                <a
-                  class="link footer-address"
-                  href="https://www.google.com/maps/d/u/0/viewer?msa=0&mid=10uSM3H-mIU3GznYo2szRIEphczw&ll=50.42732700000001%2C30.538092&z=17"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
-              </li>
-              <li>
-                <a class="link footer-contacts" href="mailto:info@example.com">info@example.com</a>
-              </li>
-              <li>
-                <a class="link footer-contacts" href="tel:+380991111111">+38 099 111 11 11</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="list-address">
+            <li>
+              <a
+                class="link footer-address"
+                href="https://www.google.com/maps/d/u/0/viewer?msa=0&mid=10uSM3H-mIU3GznYo2szRIEphczw&ll=50.42732700000001%2C30.538092&z=17"
+                target="_blank"
+                rel="noopener noreferrer"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li>
+              <a class="link footer-contacts" href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li>
+              <a class="link footer-contacts" href="tel:+380991111111">+38 099 111 11 11</a>
+            </li>
+          </ul>
         </address>
       </div>
     </footer>

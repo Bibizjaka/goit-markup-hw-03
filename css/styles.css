@@ -25,8 +25,12 @@
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: solid 1px teal;
+  /* outline: solid 1px teal; */
   /* background-color: tomato; */
+}
+section {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 body {
@@ -41,6 +45,9 @@ body {
 .img {
   display: block;
 }
+.link {
+  display: block;
+}
 .list {
   list-style-type: none;
 }
@@ -49,13 +56,15 @@ body {
   margin-bottom: 0;
 }
 
-.link {
+.link,
+.projects-list {
   text-decoration: none;
   display: inline-block;
 }
-.link {
-  display: block;
+.project-items {
+  display: inline-block;
 }
+
 /* Хедер */
 .header a {
   padding-bottom: 35px;
@@ -71,6 +80,7 @@ body {
 .list {
   display: flex;
   align-items: center;
+  padding-left: 0;
 }
 .header-container .logo-link {
   margin-right: 93px;
@@ -97,9 +107,6 @@ body {
   display: flex;
   margin-left: auto;
 }
-/* .header-contacts + .header-contacts {
-  margin-left: 50px;
-} */
 
 .header-link {
   color: var(--title-color);
@@ -161,7 +168,6 @@ body {
 
   margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
   width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -177,11 +183,11 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-
   letter-spacing: 0.06em;
 
+  padding: 10px 32px;
+  border: none;
   border-radius: 4px;
-
   display: inline-block;
 }
 
@@ -203,6 +209,16 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.features {
+  padding-bottom: 0;
+}
+.features .list {
+  padding: 0;
+}
+.features p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 
 .features-title {
   color: var(--title-color);
@@ -215,13 +231,9 @@ body {
   margin-bottom: 10px;
   margin-top: 0;
 }
-.features p {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+.item:not(:first-child) {
+  margin-left: 30px;
 }
 
 /* Чем мы занимаемся */
@@ -236,17 +248,15 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 
-  margin-bottom: 0;
   margin-top: 0;
   margin-bottom: 50px;
 }
-.projects-title {
-  margin-bottom: 50px;
+.projects .list {
+  flex-wrap: wrap;
 }
-.projects,
-.team {
-  padding-bottom: 94px;
+.item:not(:first child) {
 }
+
 /* Наша команда */
 .team {
   background-color: var(--team-background-color);
@@ -273,15 +283,27 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
+.team-item {
+  background-color: var(--wite-color);
+}
+.team-item:not(:first-child) {
+  margin-left: 30px;
+}
+.team-item p {
+  margin-bottom: 30px;
+}
 /* Футер */
 .footer {
   padding-bottom: 60px;
   padding-top: 60px;
 }
+
 .logo-container {
   margin-bottom: 20px;
 }
-
+.address {
+  flex-direction: column;
+}
 .address .list {
   padding-left: 0;
 }
@@ -294,6 +316,10 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+}
+.list-address {
+  list-style: none;
+  padding-left: 0;
 }
 
 .footer-address {
@@ -327,9 +353,15 @@ body {
 
 /*  Portfolio.html */
 /* Кнопки Portfolio */
+.list-buttons {
+  justify-content: center;
+  margin-right: 8px;
+}
+
 .portfolio-button {
   background: var(--team-background-color);
   border-radius: 4px;
+  border: 0;
 
   cursor: pointer;
 
@@ -339,6 +371,11 @@ body {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 34px;
+  margin-right: 8px;
+  padding: 6px 20px;
+}
+.portfolio-button + .portfolio-button {
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -363,4 +400,16 @@ body {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+}
+.projects-list {
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.project-items .link {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+  background-color: var(--wite-color);
+  text-align: center;
 }
