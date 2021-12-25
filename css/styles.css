@@ -72,8 +72,6 @@ body {
 }
 .header {
   background-color: var(--wite-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .header-container,
 .navigation,
@@ -86,6 +84,9 @@ body {
   margin-right: 93px;
 }
 
+.header-container {
+  border-bottom: 1px solid #ececec;
+}
 .nav + .nav {
   margin-left: 50px;
 }
@@ -214,6 +215,9 @@ body {
 }
 .features .list {
   padding: 0;
+}
+.features.item {
+  width: 270px;
 }
 .features p {
   margin-bottom: 0;
