@@ -434,6 +434,9 @@ body {
 .project-items a img {
   width: 367.5px;
 }
+.project-items img {
+  display: block;
+}
 .projects-list {
   flex-wrap: wrap;
   margin-left: -30px;
@@ -449,19 +452,12 @@ body {
   border-left: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
 }
-.portfolio-projects-title,
-.portfolio-description {
-  margin-left: 20px;
-}
 
-.portfolio-projects-title {
-  margin: 0;
-  margin-top: 20px;
-  margin-bottom: 4px;
-  margin-left: 24px;
+.card-desc {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
-.portfolio-description {
-  margin: 0;
-  margin-bottom: 20px;
-  margin-left: 24px;
+.portfolio-projects-title {
+  margin-bottom: 4px;
 }
