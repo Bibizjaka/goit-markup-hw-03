@@ -39,7 +39,7 @@ p {
   /* outline: solid 1px teal; */
   /* background-color: tomato; */
 }
-section {
+.section {
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -62,8 +62,9 @@ body {
   list-style-type: none;
 }
 .container .list {
-  margin-top: 0;
-  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .link,
@@ -83,13 +84,10 @@ body {
 .header {
   background-color: var(--wite-color);
   border-bottom: 1px solid #ececec;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .header-container {
-  margin-bottom: 0;
-  margin-top: 0;
   height: 78.75px;
+  padding-left: 15px;
 }
 .header-container,
 .navigation,
@@ -97,11 +95,10 @@ body {
   display: flex;
   align-items: center;
   padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .header-container .logo-link {
   margin-right: 93px;
+  padding-left: 15px;
 }
 
 .nav + .nav {
@@ -124,8 +121,6 @@ body {
 .header-contacts {
   display: flex;
   margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .header-link {
@@ -172,7 +167,9 @@ body {
 }
 .hero {
   padding: 0;
+  padding-top: 200px;
   text-align: center;
+  background-image: url(../img/index-images/);
 }
 
 .hero-title {
@@ -190,7 +187,6 @@ body {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
 }
 /* Кнопки */
 .hero-button {
@@ -346,6 +342,7 @@ body {
   list-style: none;
   padding-left: 0;
   margin: 0;
+  margin-top: 0;
 }
 .address-item:not(:last-child) {
   margin-bottom: 9px;
@@ -359,7 +356,6 @@ body {
   line-height: 1.7;
 
   letter-spacing: 0.03em;
-  margin-bottom: 9px;
 }
 .footer-contacts {
   color: var(--footer-contacts-color);
@@ -432,22 +428,31 @@ body {
   letter-spacing: 0.03em;
 }
 .project-items a img {
-  width: 367.5px;
-}
-.project-items img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
+
 .projects-list {
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
 }
+.project-items {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.project-items:nth-child(3n) {
+  margin-right: 0;
+}
+.project-items:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .project-items .link {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 90px) / 3);
   background-color: var(--wite-color);
   text-align: center;
+}
+
+.project-items .card-desc {
   border-bottom: 1px solid #e5e5e5;
   border-left: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
